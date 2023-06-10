@@ -8,7 +8,7 @@ export default {
             pages: 'build',
             assets: 'build',
             fallback: undefined,
-            precompress: true,
+            precompress: false, //好麻烦啊,摸了
             strict: true
         })
     }
