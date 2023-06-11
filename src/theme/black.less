@@ -1,0 +1,19 @@
+#Navbar {
+    display: grid;
+    gap: 0.5em; //间距
+    grid-template-columns: repeat(3, 3em); //单元格的宽度
+    background-color: #333;
+    height: 2em;
+
+    a {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        color: white;
+        text-decoration: none; //超链接下划线
+
+        &:hover {
+            background-color: #111;
+        }
+    }
+}
