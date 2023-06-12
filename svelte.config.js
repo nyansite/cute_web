@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 export default {
     kit: {
@@ -9,8 +9,9 @@ export default {
             fallback: undefined,
             precompress: true,
             strict: true
-        })
+        }),
     },
-    preprocess: preprocess()
+    preprocess: vitePreprocess(),
+    
 };
 
