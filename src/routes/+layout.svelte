@@ -1,10 +1,9 @@
 <script>
-  import { onMount } from "svelte";
   import jsCookie from "js-cookie";
-  export let 导航栏背景 = "#333"; //我草
-  export let 按钮背景 = "#333"; //我草
+  let navbar_bg;
+  let button_bg;
+  let navbar_text;
 
-  // navbar_bg = "#7F583F";
   let theme = jsCookie.get("theme");
   if (theme == null) {
     theme = "咲夜白";
@@ -12,18 +11,21 @@
   jsCookie.set("theme", theme, { expires: 114, path: "/" }); //单位天,chrome上限400,所以还要续,firefox超过限制不保存
   switch (theme) {
     case "咲夜白":
-      导航栏背景 = "#D3D3D3";
-      按钮背景 = "#bfbfbf";
-
+      navbar_bg = "#D3D3D3";
+      button_bg = "#bfbfbf";
+      navbar_text = "#000000";//白底黑字
       break;
     case "baka蓝":
-      导航栏背景 = "CBF1F5";
+      navbar_bg = "CBF1F5";
       break;
   }
   console.log(theme);
 </script>
 
-<nav id="Navbar" style="--navbar_bg: {导航栏背景};--button_bg:{按钮背景}">
+<nav
+  id="Navbar"
+  style="--navbar_bg: {navbar_bg};--button_bg:{button_bg};--navbar_text{navbar_text}"
+>
   <a rel="external" href="/">摸鱼</a>
   <a href="/">摸鱼</a>
   <a href="/">摸鱼</a>

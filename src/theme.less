@@ -1,25 +1,27 @@
 #Navbar {
-    position: fixed;
+    position: fixed;//固定
     top: 0;
     left: 0;
     width: 100%;
-    display: grid;
-    gap: 0.5em; //间距
-    grid-template-columns: repeat(3, 5em); //单元格的宽度
-    grid-template-rows: 2em; //高
+    height: 2em;
     background-color: var(--navbar_bg); //原生css变量,不会在编译期替换
 
     a {
-        line-height: $grid-template-rows; //居中
+        transition: 0.5s; //过渡时间
+        float: left;
+        display: block;
+        line-height: $height; //垂直居中
         text-align: center;
-        color: white;
-        text-decoration: none; //超链接下划线
+        color: var(--navbar_text);
+        text-decoration: none; //超链接下划线去掉
+        width: 5em;
+        margin: 0 0.5em; //间隔
 
         &:hover {
-            
             background-color: var(--button_bg);
-            border: 1px solid var(--button_bg);
+            border: 0 solid; //有实体的边框会导致字被挤下去(悲
             border-radius: 5em;
+            width: 8em;
         }
     }
 }
