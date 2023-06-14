@@ -13,7 +13,7 @@
     case "咲夜白":
       navbar_bg = "#D3D3D3";
       button_bg = "#bfbfbf";
-      navbar_text = "#000000";//白底黑字
+      navbar_text = "#000000"; //白底黑字
       break;
     case "baka蓝":
       navbar_bg = "CBF1F5";
@@ -26,6 +26,8 @@
   id="Navbar"
   style="--navbar_bg: {navbar_bg};--button_bg:{button_bg};--navbar_text{navbar_text}"
 >
+<div id="logo"><img src="/house-solid.svg" alt="logo" /></div>
+  
   <a rel="external" href="/">摸鱼</a>
   <a href="/">摸鱼</a>
   <a href="/">摸鱼</a>
