@@ -1,3 +1,5 @@
+@nav-margin-left: 2em; //导航栏第一个元素(首页)的左边距
+
 #Navbar {
     position: fixed; //固定
     top: 0;
@@ -6,30 +8,31 @@
     height: 3em;
     background-color: var(--navbar_bg); //原生css变量,不会在编译期替换
 
-    #logo {
+    #home {
         height: 3em;
+        width: 3em;
         float: left;
-        display: block;
-        transition: 0.5s; //过渡时间,颜色改变
-        margin: 0 0.5em;
-        display: flex;
+        transition: 0.5s; //过渡时间
+        margin-left: @nav-margin-left;
+        margin-right: 0.5em;
+        display: flex block;
         align-items: center;
         justify-content: center;
 
         img {
-            height:1.2em;
+            height: 1.2em;
         }
 
         &:hover {
             background-color: var(--button_bg);
             border: 0 solid;
             border-radius: 5em;
-            padding: 0 1.5em;
+            padding: 0 @nav-margin-left; //外边距变成了内边距,图标不会移动
             margin-left: 0;
         }
     }
 
-    a {
+    .nav_button {
         transition: 0.5s; //过渡时间
         float: left;
         display: block;
@@ -44,7 +47,7 @@
             background-color: var(--button_bg);
             border: 0 solid; //有实体的边框会导致字被挤下去(悲
             border-radius: 5em;
-            width: 6em;
+            width: 7em;
         }
     }
 }
