@@ -1,5 +1,6 @@
 <script>
   import jsCookie from "js-cookie";
+  import { onMount } from "svelte";
   let navbar_bg;
   let button_bg;
   let navbar_text;
@@ -20,17 +21,20 @@
       break;
   }
   console.log(theme);
+  onMount(()=>{
+    document.getElementById("Navbar").style.transition = "0.5s";//默认0,加载完毕后改成0.5,没有割裂感~~~
+  })
 </script>
 
 <nav
   id="Navbar"
   style="--navbar_bg: {navbar_bg};--button_bg:{button_bg};--navbar_text{navbar_text}"
 >
-  <a href="/" id="home"><img src="/house-solid.svg" alt="home" /></a>
+  <a target="_blank" rel="external" href="/" id="home"><img src="/house-solid.svg" alt="home" /></a>
 
-  <a class="nav_button" rel="external" href="/">摸鱼</a>
-  <a class="nav_button" href="/">摸鱼</a>
-  <a class="nav_button" href="/">摸鱼</a>
+  <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
+  <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
+  <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
 </nav>
 <br />
 <slot />
