@@ -23,12 +23,13 @@
   onMount(() => {
     document.getElementById("Navbar").style.transition = "0.5s"; //默认0,加载完毕后改成0.5,没有割裂感~~~
 
-    var OriginTitile = document.title;
+    var ico = document.getElementById("icon");
+    var OriginIco = document.getElementById("icon").href;
     document.addEventListener("visibilitychange", function () {
       if (document.visibilityState === "visible") {
-        document.title = OriginTitile;
+        ico.href = OriginIco;
       } else {
-        document.title = "阿伟死了";
+        ico.href = "/cat-space.gif";
       }
     });
   });
