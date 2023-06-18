@@ -1,4 +1,5 @@
 #!/usr/bin/fish
+mkdir ../static
 for file in ./*.*
     if test $file -ef (status filename);
         continue
