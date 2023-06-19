@@ -1,38 +1,42 @@
 <script>
-  import jsCookie from "js-cookie";
+  // import jsCookie from "js-cookie";
   import { onMount } from "svelte";
   let navbar_bg;
   let button_bg;
   let navbar_text;
 
-  let theme = jsCookie.get("theme");
-  if (theme == null) {
-    theme = "咲夜白";
-  }
-  jsCookie.set("theme", theme, { expires: 114, path: "/" }); //单位天,chrome上限400,所以还要续,firefox超过限制不保存
-  switch (theme) {
-    case "咲夜白":
-      navbar_bg = "#D3D3D3";
-      button_bg = "#bfbfbf";
-      navbar_text = "#000000"; //白底黑字
-      break;
-    case "baka蓝":
-      navbar_bg = "CBF1F5";
-      break;
-  }
-  onMount(() => {
-    document.getElementById("Navbar").style.transition = "0.5s"; //默认0,加载完毕后改成0.5,没有割裂感~~~
+  let theme = localStorage.getItem("theme");
+  settheme();
 
-    var ico = document.getElementById("icon");
-    var OriginIco = document.getElementById("icon").href;
-    document.addEventListener("visibilitychange", function () {
-      if (document.visibilityState === "visible") {
-        ico.href = OriginIco;
-      } else {
-        ico.href = "/cat-space.gif";
-      }
-    });
+  var ico = document.getElementById("icon");
+  var OriginIco = document.getElementById("icon").href;
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      ico.href = OriginIco;
+    } else {
+      ico.href = "/cat-space.gif";
+    }
   });
+  onMount(() => {//加载完毕后运行
+    document.getElementById("Navbar").style.transition = "0.5s"; //默认0,加载完毕后改成0.5,没有割裂感~~~
+  });
+
+  function settheme() {
+    localStorage.setItem("theme", theme);
+    switch (theme) {
+      case "咲夜白":
+        navbar_bg = "#D3D3D3";
+        button_bg = "#bfbfbf";
+        navbar_text = "#000000"; //白底黑字
+        break;
+      case "baka蓝":
+        navbar_bg = "CBF1F5";
+        break;
+      default:
+        theme = "咲夜白";
+        settheme();
+    }
+  }
 </script>
 
 <nav
