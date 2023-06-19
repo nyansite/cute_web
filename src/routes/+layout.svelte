@@ -7,7 +7,6 @@
 
   let theme = localStorage.getItem("theme");
   settheme();
-
   var ico = document.getElementById("icon");
   var OriginIco = document.getElementById("icon").href;
   document.addEventListener("visibilitychange", function () {
@@ -51,7 +50,7 @@
   <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
   <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
 </nav>
-<br />
+<div id="filler"></div>
 <slot />
 
 <style lang="less">

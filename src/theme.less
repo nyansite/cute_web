@@ -1,16 +1,16 @@
 @nav-margin-left: 2em; //导航栏第一个元素(首页)的左边距
-
+@nav-height:3em;//导航栏高度
 #Navbar {
     position: fixed; //固定
     top: 0;
     left: 0;
     width: 100%;
-    height: 3em;
+    height: @nav-height;
     background-color: var(--navbar_bg); //原生css变量,不会在编译期替换
     transition: 0s; //过渡时间 js更改
 
     #home {
-        height: 3em;
+        height: @nav-height;
         width: 3em;
         float: left;
         margin-left: @nav-margin-left;
@@ -51,4 +51,7 @@
             width: 7em;
         }
     }
+}
+#filler{//填充物,防止导航栏遮挡
+    height: @nav-height;
 }
