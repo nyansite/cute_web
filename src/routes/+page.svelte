@@ -59,7 +59,10 @@
     <p>阿巴阿巴</p>
     <p>阿巴阿巴</p>
   </div>
-  <div id="sidebar">公告</div>
+  <div id="sidebar">
+    <div>公告</div>
+    <div class="hr" />
+  </div>
 </div>
 
 <style lang="less">
@@ -68,9 +71,26 @@
     grid-template-columns: 7fr 1fr;
     gap: 0 2%;
     margin: 0 10%;
+    border: 0 solid;
+    border-radius: 1em;
+    opacity: 0.8;
+    background-color: var(--navbar_bg);
   }
+
   #sidebar {
     border-left: solid var(--button_bg);
     height: 10em;
+    text-align: center;
+  }
+  .hr{//别问我为什么不用html <hr>
+    display: flex;
+    color: pink;
+    width: 80%;
+    margin: 0 auto;
+    &::after, &::before{
+      content: '';
+      width: 100%;
+      border: 1px solid $color;
+    }
   }
 </style>

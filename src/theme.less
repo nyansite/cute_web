@@ -1,6 +1,15 @@
 @nav-margin-left: 2em; //导航栏第一个元素(首页)的左边距
-@nav-height:3em;//导航栏高度
+@nav-height: 3em; //导航栏高度
+
+:root {
+    background-image: url("/cat-space.gif");
+    // background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
 #Navbar {
+    z-index: 114514; //置顶
     position: fixed; //固定
     top: 0;
     left: 0;
@@ -52,6 +61,8 @@
         }
     }
 }
-#filler{//填充物,防止导航栏遮挡
+
+#filler {
+    //填充物,防止导航栏遮挡
     height: @nav-height;
 }
