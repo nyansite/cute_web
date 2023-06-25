@@ -30,7 +30,7 @@
     if (document.visibilityState === "visible") {
       ico.href = OriginIco;
     } else {
-      ico.href = "/cat-space.gif";
+      ico.href = "/F5BBBAA0665718FC94E75B273CAF379E.jpg";
     }
   });
   onMount(() => {
