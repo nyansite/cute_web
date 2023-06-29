@@ -9,55 +9,34 @@
   id="page"
   style="--navbar_bg: {navbar_bg};--button_bg:{button_bg};--navbar_text:{navbar_text}"
 >
-  <div id="main">
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
-    <p>阿巴阿巴</p>
+  <div id="head">
+    <img src="/cat-space.gif" alt="" />
+    <div id="channel">
+      <a href="/">番剧</a>
+      <a href="/">电影</a>
+      <a href="/">游戏</a>
+      <a href="/">音乐</a>
+      <a href="/">音MAD</a>
+      <a href="/">MMD</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+      <a href="/">占位符</a>
+    </div>
   </div>
   <div id="sidebar">
     <div id="user">
@@ -74,7 +53,7 @@
         </div>
         <div>
           <p>114514</p>
-          投稿
+          动态
         </div>
       </div>
     </div>
@@ -91,6 +70,7 @@
       <p>我是公告</p>
     </div>
     <div class="hr" />
+    <div id="ad">广告位招租</div>
   </div>
 </div>
 
@@ -105,10 +85,36 @@
     opacity: 0.8;
     background-color: var(--navbar_bg);
   }
+  #head {
+    margin-top: 1em;
+    margin-left: 1em;
+    height: 4em;
+    display: flex;
+    img {
+      margin: 0 1.5em;
+    }
+    #channel {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 1em;
+      width: 100%;
+
+      a {
+        margin: 0;
+        text-align: center;
+        border: solid black; //TODO 换配色
+        border-radius: 0.4em;
+        width: 100%;
+        height: min-content;
+        white-space: nowrap;
+      }
+    }
+  }
 
   #sidebar {
     border-left: solid var(--button_bg);
     height: min-content;
+    text-align: center;
     #user {
       margin-top: 1em;
       img {
@@ -133,13 +139,22 @@
         }
       }
     }
+
     #bulletin {
       div {
         text-align: center;
         font-weight: bolder;
       }
+      margin: 0.5em;
+    }
+
+    #ad {
+      writing-mode: vertical-rl;
+      display: inline-block;
+      letter-spacing: 2em;
     }
   }
+
   //别问我为什么不用html <hr>
   .hr {
     display: flex;

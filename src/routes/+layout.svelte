@@ -47,7 +47,7 @@
     ><img src="/house-solid.svg" alt="home" /></a
   >
 
-  <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
+  <a class="nav_button" target="_blank" rel="external" href="/">论坛</a>
   <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
   <a class="nav_button" target="_blank" rel="external" href="/">摸鱼</a>
 </nav>
