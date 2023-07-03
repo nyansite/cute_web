@@ -9,33 +9,52 @@
   id="page"
   style="--navbar_bg: {navbar_bg};--button_bg:{button_bg};--navbar_text:{navbar_text}"
 >
-  <div id="head">
-    <img src="/cat-space.gif" alt="" />
-    <div id="channel">
-      <a href="/">番剧</a>
-      <a href="/">电影</a>
-      <a href="/">游戏</a>
-      <a href="/">音乐</a>
-      <a href="/">音MAD</a>
-      <a href="/">MMD</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
-      <a href="/">占位符</a>
+  <div>
+    <div id="head">
+      <img src="/1638772375126.gif" alt="" />
+      <div id="channel">
+        <a href="/">番剧</a>
+        <a href="/">电影</a>
+        <a href="/">游戏</a>
+        <a href="/">音乐</a>
+        <a href="/">音MAD</a>
+        <a href="/">MMD</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+        <a href="/">占位符</a>
+      </div>
+    </div>
+    <div id="videos">
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
     </div>
   </div>
   <div id="sidebar">
@@ -110,7 +129,15 @@
       }
     }
   }
-
+  #videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    a {
+      display: block;
+      width: 21%;
+    }
+  }
   #sidebar {
     border-left: solid var(--button_bg);
     height: min-content;
@@ -150,8 +177,9 @@
 
     #ad {
       writing-mode: vertical-rl;
+      white-space: nowrap;
       display: inline-block;
-      letter-spacing: 2em;
+      letter-spacing: 20em;
     }
   }
 

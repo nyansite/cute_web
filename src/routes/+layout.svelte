@@ -20,9 +20,9 @@
       theme = "咲夜白";
       settheme();
   }
-  setContext('navbar_bg', navbar_bg)
-  setContext('button_bg', button_bg)
-  setContext('navbar_text', navbar_text)
+  setContext("navbar_bg", navbar_bg);
+  setContext("button_bg", button_bg);
+  setContext("navbar_text", navbar_text);
 
   var ico = document.getElementById("icon");
   var OriginIco = document.getElementById("icon").href;
@@ -55,5 +55,72 @@
 <slot />
 
 <style lang="less">
-  @import "../theme.less";
+  @nav-margin-left: 2em; //导航栏第一个元素(首页)的左边距
+  @nav-height: 3em; //导航栏高度
+
+  :root {
+    background-image: url("/cat-space.gif");
+    // background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+
+  #Navbar {
+    z-index: 114514; //置顶
+    position: fixed; //固定
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: @nav-height;
+    background-color: var(--navbar_bg); //原生css变量,不会在编译期替换
+    transition: 0s; //过渡时间 js更改
+
+    #home {
+      height: @nav-height;
+      width: 3em;
+      float: left;
+      margin-left: @nav-margin-left;
+      margin-right: 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: inherit; //过渡时间,继承
+
+      img {
+        height: 1.2em;
+      }
+
+      &:hover {
+        background-color: var(--button_bg);
+        border: 0 solid;
+        border-radius: 5em;
+        padding: 0 @nav-margin-left; //外边距变成了内边距,图标不会移动
+        margin-left: 0;
+      }
+    }
+
+    .nav_button {
+      transition: inherit; //过渡时间,继承
+      float: left;
+      display: block;
+      text-align: center;
+      color: var(--navbar_text);
+      text-decoration: none; //超链接下划线去掉
+      width: 5em;
+      margin: 0 0.5em; //间隔
+      line-height: $height; //垂直居中
+
+      &:hover {
+        background-color: var(--button_bg);
+        border: 0 solid; //有实体的边框会导致字被挤下去(悲
+        border-radius: 5em;
+        width: 7em;
+      }
+    }
+  }
+
+  #filler {
+    //填充物,防止导航栏遮挡
+    height: @nav-height;
+  }
 </style>
