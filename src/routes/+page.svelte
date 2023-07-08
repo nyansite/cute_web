@@ -97,12 +97,11 @@
   #page {
     display: grid;
     grid-template-columns: 7fr 1fr;
-    gap: 0 2%;
     margin: 0 10%;
     border: 0 solid;
     border-radius: 1em;
-    opacity: 0.8;
-    background-color: var(--navbar_bg);
+    background-color: rgba(191, 191, 191, 0.5);
+    gap: 0 2%;
   }
   #head {
     margin-top: 1em;
@@ -132,7 +131,8 @@
   #videos {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
+    opacity: 1;
     a {
       display: block;
       width: 21%;
