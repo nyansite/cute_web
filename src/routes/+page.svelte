@@ -40,21 +40,134 @@
       </div>
     </div>
     <div id="videos">
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
-      <a href="/" class="video"><img src="/无标题.jpg" alt="封面" /><p>给我玩fgo</p></a>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
+      <div class="video">
+        <a href="/" class="cover"> <img src="/无标题.jpg" alt="封面" /> </a>
+        <a href="/" class="title">给我玩fgo</a>
+      </div>
     </div>
   </div>
   <div id="sidebar">
@@ -116,7 +229,6 @@
       grid-template-columns: repeat(12, 1fr);
       column-gap: 1em;
       width: 100%;
-
       a {
         margin: 0;
         text-align: center;
@@ -132,10 +244,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    opacity: 1;
-    a {
-      display: block;
+    margin-top: 2em;
+    .video {
       width: 21%;
+      height: 15em;
+      .cover {
+        width: 100%;
+        height: 40%;
+        img {
+          width: 100%;
+          height: 80%;
+        }
+      }
     }
   }
   #sidebar {
@@ -176,6 +296,10 @@
     }
 
     #ad {
+      img {
+        width: 100%;
+        height: 40%;
+      }
       writing-mode: vertical-rl;
       white-space: nowrap;
       display: inline-block;
