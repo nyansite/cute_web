@@ -3,10 +3,11 @@
   var islogin = false;
   var pre = getdata();
   var page = 1;
-  onMount(async () => {
+  onMount(async function(){
     const res = await fetch("/api/user_status", {
       method: "GET",
     });
+    let data = res.json();
     switch (res.status) {
       case 200:
         islogin = true;
@@ -15,7 +16,7 @@
   });
   async function getdata() {
     let response = await fetch("/admin/browse_video/" + page, {
-      method: "POST",
+      method: "GET",
     });
     switch (response.status) {
       case 200:

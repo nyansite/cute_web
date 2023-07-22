@@ -1,4 +1,5 @@
 <script>
+  
  async function sub() {
     let response = await fetch("/admin/upload_video", {
       method: "POST",
