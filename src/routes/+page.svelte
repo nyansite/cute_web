@@ -1,14 +1,10 @@
+
+
 <script>
   import { getContext } from "svelte";
-  let navbar_bg = getContext("navbar_bg");
-  let button_bg = getContext("button_bg");
-  let navbar_text = getContext("navbar_text");
 </script>
 
-<div
-  id="page"
-  style="--navbar_bg: {navbar_bg};--button_bg:{button_bg};--navbar_text:{navbar_text}"
->
+<div id="page">
   <div>
     <div id="head">
       <img src="/1638772375126.gif" alt="" />
@@ -172,7 +168,6 @@
   </div>
   <div id="sidebar">
     <div id="user">
-      <img alt="头像" src="/cat-space.gif" />
       <p>用户名</p>
       <div id="count">
         <div>
@@ -208,6 +203,8 @@
 
 <style lang="less">
   #page {
+    position: relative;
+    top: 120px;
     display: grid;
     grid-template-columns: 7fr 1fr;
     margin: 0 10%;
