@@ -3,7 +3,7 @@
         display: flex;
         position: fixed;
         width: 100vw;
-        height:100px ;
+        height:80px ;
         background-color: #2a4a77;
         border-radius: 15px;
         z-index: 9999;
@@ -12,9 +12,10 @@
         position: absolute;
         left: 30px;
         top: 10px;
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
+        background-color: white;
     }
     .innerbar{
         position: absolute;
@@ -29,56 +30,42 @@
         flex-direction: column;
     }
     .ico{
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
     }
     .innerbar span{
         color: white;
+        font-size: 8px;
     }
     .search {
         position: absolute;
+        top: 20px;
         left: 440px;
         flex: auto;
     }
     .search .textcondition{
         position: absolute;
         border-radius: 10px;
-        top: 10px;
-        width: 30vw;
+        width: 24vw;
         height: 40px;
-    }
-    .search .tagcondition{
-        position: absolute;
-        border-radius: 10px;
-        top: 60px;
-        width: 15vw;
-        height: 25px;
-    }
-    .search .addtagbutton{
-        position: absolute;
-        top: 60px;
-        left: 16vw;
-        height: 30px;
-        width: 6vw;
     }
     .search .searchbutton{
         position: absolute;
-        top: 60px;
-        left: 23vw;
-        height: 30px;
-        width: 7vw;
+        left: 25vw;
+        height: 40px;
+        width: 5vw;
     }
     .profile{
         position: absolute;
-        top: 15px;
+        top: 10px;
         right: 5vw;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%; 
     }
 </style>
 <div class="navbar">
-    <img src="/133122914.jpg" class="logo" alt="ico">
+    <img src="/logo.svg" class="logo" alt="ico">
     <div class="innerbar">
         <div class="unit">
             <div class="ico">
@@ -107,8 +94,6 @@
     </div>
     <div class="search">
             <input type="search" class="textcondition">
-            <input class="tagcondition" placeholder=" 搜索标签">
-            <button class="addtagbutton">添加标签</button>
             <button class="searchbutton">搜索</button>
     </div>
     <img class="profile" src="/cat-space.gif" alt="avatar">

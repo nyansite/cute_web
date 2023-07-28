@@ -23,6 +23,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"abuild": "^0.0.5",
+		"builda": "^5.2.2",
 		"js-cookie": "^3.0.5",
 		"less": "^4.1.3",
 		"svelte-preprocess": "^5.0.4"
