@@ -1,5 +1,5 @@
 .DS_Store
-/node_modules/*
+/node_modules
 /build
 /.svelte-kit
 /package
@@ -11,5 +11,3 @@ vite.config.ts.timestamp-*
 
 /static
 /src/routes/test
-
-!/node_modules/svelte-tags-search-input
