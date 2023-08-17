@@ -1,11 +1,16 @@
 <script>
-    import Tags from "svelte-tags-input";
+    import Tags from "svelte-tags-search-input";
     let tags = [];
+    let textCondition = '';
             
     const customAutocomplete = async () => {
 	    const list = await fetch('http://localhost:8000/api/search/taglist');
 	    const res = await list.json();				
 	    return res.results;
+    }
+    function search(){
+        console.log(tags)
+        console.log(textCondition)
     }
 </script>
 <style>
@@ -53,16 +58,9 @@
         left: 440px;
         flex: auto;
     }
-    .search input{
-        position: absolute;
-        border-radius: 10px;
-        width: 12vw;
-        height: 40px;
-    }
     .search .tagSelect{
         position: absolute;
-        left: 13vw;
-        width: 12vw;
+        width: 24vw;
         height: 40px;
     }
     .search button{
@@ -110,14 +108,14 @@
         </div>
     </div>
     <div class="search" >
-        <input type="search">
         <span class="tagSelect">
             <Tags
-	            bind:tags={tags}
+	            bind:tags = {tags}
 	            autoComplete={customAutocomplete}
+                bind:extra = {textCondition}
             />
         </span>
-        <button>搜索</button>
+        <button on:click={search}>搜索</button>
     </div>
     <img class="profile" src="/cat-space.gif" alt="avatar">
 </div>
